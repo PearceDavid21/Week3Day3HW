@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/HotelHeader"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#000000"
+        android:background="#ffEB3B"
+        android:text="Lodging Frontier"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/my_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background= "#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+
+    <EditText
+        android:id="@+id/name_edittext"
+        style="@style/HotelEditText"
+        android:textColor="#FFFFFF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Identification"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_divider" />
+
+    <EditText
+        android:id="@+id/room_number_edit_text"
+        style="@style/HotelEditText"
+        android:layout_width="0dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:hint="Quarters Number"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
+
+    <EditText
+        android:id="@+id/price_edit_text"
+        style="@style/HotelEditText"
+        android:textColor="#FFFFFF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Credit Amount"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_number_edit_text" />
+
+
+    <Button
+        android:id="@+id/check_in_button"
+        style="@style/HotelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Report Entry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_edit_text"
+        app:layout_constraintBottom_toTopOf="@id/check_in_button"
+        android:src="@drawable/stlogo2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
